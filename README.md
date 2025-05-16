@@ -6,30 +6,30 @@ This is a Go-based web service that processes receipts and calculates reward poi
 - **POST** /receipts/process — Submit a receipt and receive a unique ID
 - **GET** /receipts/{id}/points — Retrieve the points awarded for a previously submitted receipt by its ID
 
-### Project Files Overview:
+## Project Files Overview
 
-**main.go**
+**main.go** 
 The entry point of the application. Sets up HTTP routing and starts the server.
 
 **points/**
-Contains the logic for calculating points based on receipt details.
+— Contains the logic for calculating points based on receipt details.
 (File: points.go)
 
 **models/**
-Defines data structures used for receipts and items.
+— Defines data structures used for receipts and items.
 (File: models.go)
 
 **go.mod and go.sum**
-Handle dependency management for the Go modules used in the project.
+— Handle dependency management for the Go modules used in the project.
 
 **api.yml**
-Defines the API endpoints and schema in a standard format for documentation.
+— Defines the API endpoints and schema in a standard format for documentation.
 
 ## Installation & Run
 
-1. ```git clone https://github.com/reillybergeron/FetchAssessment```
-2. ```cd FetchAssessment```
-3. ```go run main.go``` (This should also download any dependencies specified in go.mod)
+1. Clone the repository using: git clone https://github.com/reillybergeron/FetchAssessment
+2. Navigate to the directory using: cd FetchAssessment
+3. Run main using: go run main.go (This should also download any dependencies specified in go.mod)
 4. The application should now be running on http://localhost:8080
 
 ## Usage
