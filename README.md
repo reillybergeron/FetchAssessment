@@ -8,16 +8,22 @@ This is a Go-based web service that processes receipts and calculates reward poi
 
 ## Project Files Overview
 
+**README.md**
+This file.
+
 **main.go** 
 The entry point of the application. Sets up HTTP routing and starts the server.
 
 **points/**
-— Contains the logic for calculating points based on receipt details.
-(File: points.go)
+— Contains the logic for calculating points based on receipt details. points.go handles calculations while helpers.go contains helper functions used in points.go. Tests for points.go found in points_test.go.
+(Files: points.go, helpers.go, and points_test.go)
 
 **models/**
 — Defines data structures used for receipts and items.
 (File: models.go)
+
+**main_test.go**
+— Contains integration tests for the two main API endpoints.
 
 **go.mod and go.sum**
 — Handle dependency management for the Go modules used in the project.
