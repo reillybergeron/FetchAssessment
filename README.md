@@ -1,6 +1,8 @@
 # Fetch: Take Home Assessment - Backend Engineering Apprenticeship
 ### Reilly Bergeron | Bergeronreilly@gmail.com | github.com/reillybergeron
 
+## Edit 5/21/2025
+Based on feedback, unit tests have been added, and the CalculatePoints function in points.go has been refactored into smaller sub-functions, each handling a specific rule for point calculation. These changes improve both readability and testability of the code.
 
 This is a Go-based web service that processes receipts and calculates reward points based on specific rules. The server exposes two endpoints:
 - **POST** /receipts/process — Submit a receipt and receive a unique ID
@@ -9,10 +11,10 @@ This is a Go-based web service that processes receipts and calculates reward poi
 ## Project Files Overview
 
 **README.md**
-This file.
+— This file.
 
 **main.go** 
-The entry point of the application. Sets up HTTP routing and starts the server.
+— The entry point of the application. Sets up HTTP routing and starts the server.
 
 **points/**
 — Contains the logic for calculating points based on receipt details. points.go handles calculations while helpers.go contains helper functions used in points.go. Tests for points.go found in points_test.go.
