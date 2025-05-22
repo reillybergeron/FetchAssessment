@@ -6,7 +6,7 @@ This is a Go-based web service that processes receipts and calculates reward poi
 - **GET** /receipts/{id}/points — Retrieve the points awarded for a previously submitted receipt by its ID
 
 ## Edit 5/21/2025
-Based on feedback, unit tests have been added, and the CalculatePoints function in points.go has been refactored into smaller sub-functions, each handling a specific rule for point calculation. These changes improve both readability and testability of the code.
+Based on feedback, unit tests have been included, and the CalculatePoints function in points.go has been refactored into smaller sub-functions, each handling a specific rule for point calculation. These changes improve both readability and testability of the code.
 
 ## Project Files Overview
 
